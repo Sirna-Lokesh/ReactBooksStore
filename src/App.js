@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CustomNavBar from "./BookStoreComp/CustomNavBar"
+import { BrowserRouter as BR, Route, Routes, useParams } from 'react-router-dom';
+import Home from './BookStoreComp/Home';
+import MyOrders from './BookStoreComp/MyOrders';
+import Cart from './BookStoreComp/Cart';
+import Routing2 from './Routing/Routing2';
+// import HomeContainer from './reduxContainers/HomeContainer';
+export default function App() {
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CustomNavBar/>
     </div>
-  );
+  )
 }
-
-export default App;

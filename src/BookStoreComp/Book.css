@@ -1,0 +1,33 @@
+.book{
+    border: 1px solid black;
+    background-color: rgba(184, 123, 9, 0.505);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 12vw;
+}
+#image1{
+    margin-top: 2vh;
+    width: 80%;
+    height: auto;
+}
+
+.showDetailsButton{
+    width: 6vw;
+    height: 25px;
+    margin-bottom: 2vh;
+}
+@media screen and (max-width: 500px) {
+    .book {
+        box-sizing: border-box;
+      width: 35vw;
+      margin-top: 4vw;
+    }
+    .showDetailsButton{
+        width: 20vw;
+        margin-bottom: 2vh;
+    }
+  }
+  
